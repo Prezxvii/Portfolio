@@ -17,13 +17,13 @@ body {
 header {
   text-align: center;
   padding: 2rem;
-  background-color: #ffffff; /* Light background */
+  background-color: #ffffff;
   box-shadow: 0 4px 10px rgba(135, 206, 250, 0.2);
 }
 
 header h1 {
   font-size: 3rem;
-  color: #87cefa; /* Sky blue */
+  color: #87cefa;
   text-shadow: 0 0 10px #87cefa;
   animation: pulse 1.5s ease-in-out infinite;
 }
@@ -39,7 +39,7 @@ header p {
     opacity: 1;
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05);
     opacity: 0.8;
   }
 }
@@ -84,10 +84,54 @@ header h2 {
   line-height: 1.8;
 }
 
+/* Tools Section (NEWLY ADDED) */
+#tools {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f8f9fa; /* Light grayish background */
+}
+
+#tools h2 {
+  font-size: 2.5rem;
+  color: #87cefa;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #87cefa;
+}
+
+.tools-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.tool {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(135, 206, 250, 0.2);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333333;
+  transition: transform 0.3s ease;
+}
+
+.tool:hover {
+  transform: translateY(-5px);
+}
+
 /* Projects Section */
 #projects {
   background-color: #ffffff;
   padding: 2rem;
+  text-align: center; /* Fix: Ensure project heading is centered */
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  color: #87cefa;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #87cefa;
 }
 
 .projects-container {
@@ -198,9 +242,12 @@ footer {
     font-size: 2.5rem;
   }
 
-  #about h2 {
+  #about h2,
+  #tools h2,
+  #projects h2 {
     font-size: 2rem;
   }
 }
+
 
 
