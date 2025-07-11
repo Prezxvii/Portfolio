@@ -13,12 +13,33 @@
   </head>
 
   <body>
-    <header>
-      <h1>Timothy Brumell</h1>
-      <p>Software Engineer</p>
-    </header>
+    <nav class="navbar">
+      <div class="nav-brand">Timothy Brumell</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#tools">Skills</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact" class="contact-button">Get in touch</a></li>
+      </ul>
+    </nav>
 
-    <section id="about">
+    <section class="hero-section">
+      <div class="video-background">
+        <video autoplay muted loop playsinline>
+          <source src="images/1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="hero-content">
+        <h1>Building exceptional digital experiences.</h1>
+        <p>
+          I am a passionate software engineer, capturing concepts and bringing
+          them to life through clean, efficient code.
+        </p>
+        <a href="#about" class="hero-button">About me</a>
+      </div>
+    </section>
+    <section id="about" class="section-padding">
       <div class="about-content">
         <h2>About Me</h2>
         <p>
@@ -34,7 +55,7 @@
       </div>
     </section>
 
-    <section id="tools">
+    <section id="tools" class="section-padding">
       <h2>Tools I Use</h2>
       <div class="tools-container">
         <div class="tool-category">
@@ -66,118 +87,165 @@
         </div>
       </div>
     </section>
-    <section id="projects">
+
+    <section id="projects" class="section-padding">
       <h2>Projects</h2>
       <div class="projects-container">
+        <div class="project">
+          <h3>MetroExams: NYC Exam Finder</h3>
+          <img
+            src="images/metro-exams-preview.png"
+            alt="Live Preview of MetroExams Web Application"
+          />
+          <p>
+            Developed **MetroExams**, a dynamic and interactive web platform
+            designed to help users find and explore various exams across New
+            York City. The application is built with **React.js** for a robust
+            and efficient front-end, utilizing **Material-UI** for a modern,
+            responsive, and visually appealing user interface. Key features
+            include a comprehensive exam listing page with search and filtering
+            capabilities, detailed exam information cards, a responsive
+            navigation system, and an interactive FAQ section.
+          </p>
+          <p>
+            This project demonstrates strong proficiency in building scalable
+            single-page applications, implementing smooth and engaging
+            animations with **Framer Motion** for enhanced user experience, and
+            mastering **Material-UI** for complex and adaptive layouts across
+            different devices. It showcases a deep understanding of
+            component-driven design, state management, client-side routing with
+            **React Router Dom**, and attention to detail in creating intuitive
+            user interfaces.
+          </p>
+          <a href="https://metro-exams.vercel.app/" target="_blank"
+            >View Project</a
+          >
+        </div>
 
+        <div class="project">
+          <h3>Dynamic Medical Practice Web Platform</h3>
+          <img
+            src="images/my-medical-app-preview.png"
+            alt="Live Preview of the Medical Clinic Landing Page"
+          />
+          <p>
+            Developed a modern and highly interactive web platform for a medical
+            clinic, leveraging **React.js** for a robust front-end and
+            **Material-UI** for a polished, responsive user interface. Key
+            sections include an inviting hero banner, a detailed breakdown of
+            services, a 'Meet the Doctors' gallery, a curated feed for medical
+            news, and an integrated newsletter subscription.
+          </p>
+          <p>
+            This project underscores strong proficiency in building scalable
+            single-page applications, implementing sophisticated **Framer
+            Motion** animations for enhanced user engagement on scroll, and
+            mastering Material-UI for complex and adaptive layouts. It showcases
+            a commitment to component-driven design and intuitive user
+            experiences.
+          </p>
+          <a href="https://my-medical-app-pied.vercel.app/" target="_blank"
+            >View Project</a
+          >
+        </div>
 
-<div class="project">
-    <h3>MetroExams: NYC Exam Finder</h3>
-    <img
-        src="images/metro-exams-preview.png" alt="Live Preview of MetroExams Web Application"
-    />
-    <p>
-        Developed **MetroExams**, a dynamic and interactive web platform designed to help users find and explore various exams across New York City. The application is built with **React.js** for a robust and efficient front-end, utilizing **Material-UI** for a modern, responsive, and visually appealing user interface. Key features include a comprehensive exam listing page with search and filtering capabilities, detailed exam information cards, a responsive navigation system, and an interactive FAQ section.
-    </p>
-    <p>
-        This project demonstrates strong proficiency in building scalable single-page applications, implementing smooth and engaging animations with **Framer Motion** for enhanced user experience, and mastering **Material-UI** for complex and adaptive layouts across different devices. It showcases a deep understanding of component-driven design, state management, client-side routing with **React Router Dom**, and attention to detail in creating intuitive user interfaces.
-    </p>
-    <a href="https://metro-exams.vercel.app/" target="_blank">View Project</a>
-</div>
-        
-<div class="project">
-    <h3>Dynamic Medical Practice Web Platform</h3>
-    <img
-        src="images/my-medical-app-preview.png"
-        alt="Live Preview of the Medical Clinic Landing Page"
-    />
-    <p>
-        Developed a modern and highly interactive web platform for a medical clinic, leveraging **React.js** for a robust front-end and **Material-UI** for a polished, responsive user interface. Key sections include an inviting hero banner, a detailed breakdown of services, a 'Meet the Doctors' gallery, a curated feed for medical news, and an integrated newsletter subscription.
-    </p>
-    <p>
-        This project underscores strong proficiency in building scalable single-page applications, implementing sophisticated **Framer Motion** animations for enhanced user engagement on scroll, and mastering Material-UI for complex and adaptive layouts. It showcases a commitment to component-driven design and intuitive user experiences.
-    </p>
-    <a href="https://my-medical-app-pied.vercel.app/" target="_blank">View Project</a>
-</div>
-        
-<div class="project">
-    <h3>JobFinder AI</h3>
-    <img
-        src="images/jobfinder-ai-preview.png"
-        alt="JobFinder AI Live Preview"
-    />
-    <p>
-        A modern job board web application built with React.js, designed to help users find suitable job opportunities. It features robust filtering options by job title, location, and type, and includes an interactive AI assistant for enhanced job search capabilities.
-    </p>
-    <p>
-        Demonstrates strong front-end development, state management, API integration, and user-friendly design.
-    </p>
-    <a href="https://jobfinder-ai-react.vercel.app/" target="_blank">View Project</a>
-</div>
+        <div class="project">
+          <h3>JobFinder AI</h3>
+          <img
+            src="images/jobfinder-ai-preview.png"
+            alt="JobFinder AI Live Preview"
+          />
+          <p>
+            A modern job board web application built with React.js, designed to
+            help users find suitable job opportunities. It features robust
+            filtering options by job title, location, and type, and includes an
+            interactive AI assistant for enhanced job search capabilities.
+          </p>
+          <p>
+            Demonstrates strong front-end development, state management, API
+            integration, and user-friendly design.
+          </p>
+          <a href="https://jobfinder-ai-react.vercel.app/" target="_blank"
+            >View Project</a
+          >
+        </div>
 
-<div class="project">
-    <h3>College Advisor for NYC High School Students</h3>
-    <img
-        src="images/college-recommender-preview.png"
-        alt="College Advisor Live Preview"
-    />
-    <p>
-        A modern React.js web application built with Material-UI, designed to help NYC high school students find suitable colleges based on their academic and personal preferences.
-    </p>
-    <p>
-        Features a dynamic questionnaire with multi-select options, a sophisticated matching algorithm to recommend colleges, and a responsive design for optimal viewing on all devices. Demonstrates strong front-end development, state management, and external library integration.
-    </p>
-    <a href="https://my-college-recommender.vercel.app/" target="_blank">View Project</a>
-</div>
+        <div class="project">
+          <h3>College Advisor for NYC High School Students</h3>
+          <img
+            src="images/college-recommender-preview.png"
+            alt="College Advisor Live Preview"
+          />
+          <p>
+            A modern React.js web application built with Material-UI, designed
+            to help NYC high school students find suitable colleges based on
+            their academic and personal preferences.
+          </p>
+          <p>
+            Features a dynamic questionnaire with multi-select options, a
+            sophisticated matching algorithm to recommend colleges, and a
+            responsive design for optimal viewing on all devices. Demonstrates
+            strong front-end development, state management, and external library
+            integration.
+          </p>
+          <a href="https://my-college-recommender.vercel.app/" target="_blank"
+            >View Project</a
+          >
+        </div>
 
-<div class="project">
-  <h3>DocFinder: Online Doctor Appointment Platform</h3>
-  <img
-    src="images/docfinder-website-preview.png"
-    alt="DocFinder Website Live Preview"
-  />
-  <p>
-    A user-friendly and responsive React.js web application, built with Material-UI,
-    designed to streamline the process of finding and booking healthcare appointments.
-    It allows users to search for doctors by specialty, location (e.g., Manhattan, New York),
-    and accepted insurance plans.
-  </p>
-  <p>
-    The platform features intuitive search filters, a dynamic list of doctors with details
-    like experience, ratings, and availability, and interactive elements such as a modal
-    for selecting insurance carriers. Navigation is seamless using React Router, and the
-    application prioritizes an engaging user experience, demonstrating robust front-end
-    development for a practical healthcare solution.
-  </p>
-  <a href="https://doc-finder-cyan.vercel.app/" target="_blank">View Project</a>
-</div>
-        
-<div class="project">
-  <h3>Index: AI-Powered Data Platform</h3>
-  <img
-    src="images/index-website-preview.png"
-    alt="Index Website Live Preview"
-  />
-  <p>
-    A dynamic and interactive React.js web application, developed with Material-UI,
-    showcasing an AI-powered data platform. It features sophisticated data
-    visualization dashboards using Recharts, allowing users to query, analyze,
-    and understand complex datasets, complemented by an integrated SQL editor.
-  </p>
-  <p>
-    The project integrates seamless navigation with React Router and delivers an
-    engaging user experience through modern scroll-triggered animations powered
-    by Framer Motion. It includes key sections like a responsive Hero, detailed
-    feature overviews, and dedicated authentication pages (login/signup),
-    highlighting strong front-end development for a B2B SaaS solution.
-  </p>
-  <a href="https://index-ten-gray.vercel.app/" target="_blank"
-    >View Project</a
-  >
-</div>
-        
+        <div class="project">
+          <h3>DocFinder: Online Doctor Appointment Platform</h3>
+          <img
+            src="images/docfinder-website-preview.png"
+            alt="DocFinder Website Live Preview"
+          />
+          <p>
+            A user-friendly and responsive React.js web application, built with
+            Material-UI, designed to streamline the process of finding and
+            booking healthcare appointments. It allows users to search for
+            doctors by specialty, location (e.g., Manhattan, New York), and
+            accepted insurance plans.
+          </p>
+          <p>
+            The platform features intuitive search filters, a dynamic list of
+            doctors with details like experience, ratings, and availability, and
+            interactive elements such as a modal for selecting insurance
+            carriers. Navigation is seamless using React Router, and the
+            application prioritizes an engaging user experience, demonstrating
+            robust front-end development for a practical healthcare solution.
+          </p>
+          <a href="https://doc-finder-cyan.vercel.app/" target="_blank"
+            >View Project</a
+          >
+        </div>
 
-<div class="project">
+        <div class="project">
+          <h3>Index: AI-Powered Data Platform</h3>
+          <img
+            src="images/index-website-preview.png"
+            alt="Index Website Live Preview"
+          />
+          <p>
+            A dynamic and interactive React.js web application, developed with
+            Material-UI, showcasing an AI-powered data platform. It features
+            sophisticated data visualization dashboards using Recharts, allowing
+            users to query, analyze, and understand complex datasets,
+            complemented by an integrated SQL editor.
+          </p>
+          <p>
+            The project integrates seamless navigation with React Router and
+            delivers an engaging user experience through modern scroll-triggered
+            animations powered by Framer Motion. It includes key sections like a
+            responsive Hero, detailed feature overviews, and dedicated
+            authentication pages (login/signup), highlighting strong front-end
+            development for a B2B SaaS solution.
+          </p>
+          <a href="https://index-ten-gray.vercel.app/" target="_blank"
+            >View Project</a
+          >
+        </div>
+
+        <div class="project">
           <h3>ZeroCrate: Fresh Grocery Retail Solutions</h3>
           <img
             src="images/zerocrate-website-.png"
@@ -198,7 +266,7 @@
             >View Project</a
           >
         </div>
-        
+
         <div class="project">
           <h3>Aurora: Your Personalized Productivity Dashboard</h3>
           <img src="images/aurora-preview.png" alt="Aurora Live Preview" />
@@ -217,7 +285,7 @@
             UI/UX best practices for an enhanced user experience.
           </p>
           <a href="https://aurora-app-lovat.vercel.app/" target="_blank"
-          >View Project</a
+            >View Project</a
           >
         </div>
 
@@ -243,7 +311,7 @@
             >View Project</a
           >
         </div>
-        
+
         <div class="project">
           <h3>Insurify Pro</h3>
           <img src="images/insurify-pro-preview.png" alt="Insurify Pro" />
@@ -270,8 +338,7 @@
           <p>
             A dynamic React.js dashboard using Material-UI for predictive sales
             analytics and order planning. Features interactive charts, data
-            filtering by product/category/date, and a sortable sales data
-            table.
+            filtering by product/category/date, and a sortable sales data table.
           </p>
           <p>
             This project demonstrates strong front-end development, data
@@ -279,12 +346,11 @@
             for business intelligence.
           </p>
           <a href="https://guac-dashboard.vercel.app/" target="_blank"
-           >View Project</a
+            >View Project</a
           >
         </div>
 
-    
- <div class="project">
+        <div class="project">
           <h3>Atheniq AI: Personalized Marketing Platform</h3>
           <img
             src="images/atheniq-landing-page-preview.png"
@@ -300,14 +366,15 @@
             `react-intersection-observer`, custom forms, carousels, and video
             embeds for an engaging UI/UX.
           </p>
-          <a href="https://atheniq.vercel.app/" target="_blank"
-            >View Project</a
-          >
+          <a href="https://atheniq.vercel.app/" target="_blank">View Project</a>
         </div>
 
-<div class="project">
+        <div class="project">
           <h3>SwiftPay Landing Page</h3>
-          <img src="images/swiftpay-landing-page-preview.png" alt="SwiftPay Landing Page" />
+          <img
+            src="images/swiftpay-landing-page-preview.png"
+            alt="SwiftPay Landing Page"
+          />
           <p>
             A responsive React.js landing page for a modern financial service.
             Features responsive navigation with dropdowns/hamburger menu, and
@@ -322,7 +389,6 @@
             >View Project</a
           >
         </div>
-
 
         <div class="project">
           <h3>Axiom Dashboard: Cloud Communication Admin</h3>
@@ -345,35 +411,38 @@
           >
         </div>
 
-      <div class="project">
-  <h3>AI Agent Management Dashboard</h3>
-  <img
-    src="images/ai-dashboard-preview.png"
-    alt="AI Agent Management Dashboard Live Preview"
-  />
-  <p>
-    A dynamic **React.js** application designed for monitoring and managing
-    AI agents. It leverages the **React Context API** for efficient global state
-    management, integrates **React Hook Form** for robust and validated
-    interactive configurations, and presents key performance metrics with
-    **Chart.js** for data visualization.
-  </p>
-  <p>
-    Features include real-time simulated updates for agent status and output
-    logs, intuitive filtering, and seamless navigation via **React Router**.
-    The project showcases strong front-end development practices, including
-    comprehensive **error handling**, clear **loading states**, **responsive design**,
-    enhanced **accessibility (A11y)**, and **unit testing** with Jest and React Testing Library.
-  </p>
-  <a href="https://ai-dashboard-dun-eight.vercel.app/" target="_blank"
-    >View Project</a
-  >
-</div>
+        <div class="project">
+          <h3>AI Agent Management Dashboard</h3>
+          <img
+            src="images/ai-dashboard-preview.png"
+            alt="AI Agent Management Dashboard Live Preview"
+          />
+          <p>
+            A dynamic **React.js** application designed for monitoring and
+            managing AI agents. It leverages the **React Context API** for
+            efficient global state management, integrates **React Hook Form**
+            for robust and validated interactive configurations, and presents
+            key performance metrics with **Chart.js** for data visualization.
+          </p>
+          <p>
+            Features include real-time simulated updates for agent status and
+            output logs, intuitive filtering, and seamless navigation via
+            **React Router**. The project showcases strong front-end development
+            practices, including comprehensive **error handling**, clear
+            **loading states**, **responsive design**, enhanced **accessibility
+            (A11y)**, and **unit testing** with Jest and React Testing Library.
+          </p>
+          <a href="https://ai-dashboard-dun-eight.vercel.app/" target="_blank"
+            >View Project</a
+          >
+        </div>
 
-        
- <div class="project">
+        <div class="project">
           <h3>CRM System: Lead Management Solution</h3>
-          <img src="images/crm-system-preview.png" alt="CRM System Live Preview" />
+          <img
+            src="images/crm-system-preview.png"
+            alt="CRM System Live Preview"
+          />
           <p>
             A robust React.js application with Material-UI for comprehensive
             sales lead management. Features include adding/editing leads, a
@@ -432,7 +501,6 @@
             >View Project</a
           >
         </div>
-    
 
         <div class="project">
           <h3>VoyageNow: Ride-Sharing Experience</h3>
@@ -454,7 +522,10 @@
 
         <div class="project">
           <h3>Employee Tracking System</h3>
-          <img src="images/employee-tracking-preview.png" alt="Employee Tracking System" />
+          <img
+            src="images/employee-tracking-preview.png"
+            alt="Employee Tracking System"
+          />
           <p>
             Developed with HTML, CSS, and JavaScript, this system provides a
             straightforward solution for managing personnel data. It allows
@@ -475,8 +546,9 @@
           <h3>JobFinder AI</h3>
           <img src="images/job-finder-ai-preview.png" alt="JobFinder AI" />
           <p>
-            An HTML, CSS, and JavaScript-based platform for job discovery. Allows
-            users to search for jobs by keywords/location using the JSearch API.
+            An HTML, CSS, and JavaScript-based platform for job discovery.
+            Allows users to search for jobs by keywords/location using the
+            JSearch API.
           </p>
           <p>
             Features a modern UI, job saving, and a simulated AI chat assistant
@@ -510,7 +582,6 @@
           >
         </div>
 
-        
         <div class="project">
           <h3>Daily Hacks</h3>
           <img
@@ -643,9 +714,7 @@
             interactivity.
           </p>
 
-          <a
-            href="https://prezxvii.github.io/Tropical-Villa/"
-            target="_blank"
+          <a href="https://prezxvii.github.io/Tropical-Villa/" target="_blank"
             >View Project</a
           >
         </div>
@@ -722,8 +791,8 @@
           <img src="images/dental.png" alt="Dental" />
           <p>
             A sleek, modern dental clinic website built with HTML, CSS, and
-            JavaScript. This responsive site showcases services and provides easy
-            navigation for patients.
+            JavaScript. This responsive site showcases services and provides
+            easy navigation for patients.
           </p>
           <a
             href="https://prezxvii.github.io/Dental-Landing-Page/"
@@ -803,141 +872,38 @@
           <p>
             An analysis of HR data from 2000-2020 using MySQL Workbench and
             PowerBI. Covers employee demographics, job roles, turnover rates,
-            and workforce distribution.
+            and workforce
           </p>
           <a
-            href="https://github.com/Prezxvii/HR-Dashboard-MySQL-PowerBI"
+            href="https://www.novypro.com/project/hr-data-analysis-from-2000-2020-in-power-bi"
             target="_blank"
-            >View Project</a
-          >
-        </div>
-
-        <div class="project">
-          <h3>React Admin Dashboard</h3>
-          <img src="images/Dashboard.png" alt="React Admin Dashboard" />
-          <p>
-            A React-based Admin Dashboard with a component-based architecture and
-            CSS for a responsive UI, designed for efficient data management.
-          </p>
-          <a
-            href="https://github.com/Prezxvii/react-admin-dashboard"
-            target="_blank"
-            >View Project</a
-          >
-        </div>
-
-        <div class="project">
-          <h3>XVII Art Gallery</h3>
-          <img src="images/Art.png" alt="XVII Art Gallery" />
-          <p>
-            An interactive digital art showcase developed with HTML, CSS, and
-            JavaScript, showcasing front-end development skills.
-          </p>
-          <a href="https://prezxvii.github.io/Xvii-Art/" target="_blank"
-            >View Project</a
-          >
-        </div>
-
-        <div class="project">
-          <h3>SQL Project Data Analysis</h3>
-          <img src="images/SQL_.png" alt="SQL Project Data Analysis" />
-          <p>
-            Data analysis of 2024 job postings using PostgreSQL. Uncovers
-            insights for data science and data analysis job seekers.
-          </p>
-          <a
-            href="https://github.com/Prezxvii/SQL_Project_Data_Job_Analysis/tree/main"
-            target="_blank"
-            >View Project</a
-          >
-        </div>
-
-        <div class="project">
-          <h3>StudyBuddy Discord Learning Website</h3>
-          <img src="images/study.png" alt="StudyBuddy Website" />
-          <p>
-            A web application built with Python, Django, and SQL. Allows users
-            to create chat rooms for collaborative learning.
-          </p>
-          <a href="https://github.com/Prezxvii/study-buddy" target="_blank"
-            >View Project</a
-          >
-        </div>
-        <div class="project">
-          <h3>Social Media App</h3>
-          <img src="images/social.png" alt="Social Media App" />
-          <p>
-            An SQL and Django-powered social media app. Features user
-            registration, login, and a robust data model for posts and
-            interactions.
-          </p>
-          <a href="https://github.com/Prezxvii/Social-Media-App" target="_blank"
-            >View Project</a
-          >
-        </div>
-
-        <div class="project">
-          <h3>SafeCoin Vault</h3>
-          <img src="images/safecoin.png" alt="SafeCoin Vault" />
-          <p>
-            A secure vault application built with HTML, CSS, and JavaScript.
-            Features a user-friendly sign-up experience and privacy policies.
-          </p>
-          <a href="https://prezxvii.github.io/SafeCoin-Vault/" target="_blank"
             >View Project</a
           >
         </div>
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section-padding">
+      <h2>Get in Touch</h2>
+      <p>
+        Have a project in mind or just want to chat? Feel free to reach out!
+      </p>
+      <a href="mailto:timbrumell@gmail.com" class="main-button"
+        >Send me an Email</a
+      >
       <div class="social-links">
-        <h3>Contact & Connect</h3>
-        <ul class="social-list">
-          <li>
-            <a
-              href="https://github.com/Prezxvii"
-              target="_blank"
-              class="social-link"
-            >
-              <i class="fab fa-github"></i> GitHub
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/timothy-brumell/"
-              target="_blank"
-              class="social-link"
-            >
-              <i class="fab fa-linkedin-in"></i> LinkedIn
-            </a>
-          </li>
-          <li>
-            <a
-              href="mailto:timbrumell@gmail.com"
-              target="_blank"
-              class="social-link"
-            >
-              <i class="fas fa-at"></i> Email
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/Prezxvii"
-              target="_blank"
-              class="social-link"
-            >
-              <i class="fab fa-twitter"></i> Twitter
-            </a>
-          </li>
-        </ul>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/yourprofile" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
       </div>
     </section>
 
     <footer>
-      <p>&copy; 2024 Timothy Brumell</p>
+      <p>&copy; 2025 Timothy Brumell. All rights reserved.</p>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
