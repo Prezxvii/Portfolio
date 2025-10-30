@@ -93,317 +93,173 @@
       <div class="projects-container">
 
 
-
-<div class="project">
-    <h3>SafePath AI: NYC School Community Safety Assistant</h3>
-    <img
-        src="images/safepath-preview.png"
-        alt="Live Demo of SafePath AI: NYC School Safety Chatbot and Assessment Form"
-    />
+<section id="projects">
+  <!-- SafePath AI -->
+  <div class="project">
+    <h3>SafePath AI – NYC School Community Safety Assistant</h3>
+    <img src="images/safepath-preview.png" alt="SafePath AI NYC School Safety Chatbot" />
     <p>
-        Developed **SafePath AI**, a **Full-Stack** application providing personalized safety, resource, and policy advice for the NYC school community (students, parents, teachers). The **React.js** and **Material-UI (MUI)** frontend connects to a secure **Node.js/Express** proxy to protect the integrated **AI** API key.
+      <strong>SafePath AI</strong> is a <strong>Full-Stack web application</strong> that delivers personalized safety and resource guidance for NYC schools. Built with <strong>React.js, Material-UI,</strong> and a secure <strong>Node.js/Express</strong> backend proxy to protect integrated AI API keys.
     </p>
     <ul>
-        <li>
-            **Secure AI Integration:** Implemented a **secure proxy backend** on Render to call **OpenRouter** (Llama 3 model), ensuring the secret API key is never exposed on the client-side.
-        </li>
-        <li>
-            **Full-Stack Architecture:** Frontend built with **React** and styled with **MUI**, backed by a dedicated **Node/Express** server for proxying all AI requests.
-        </li>
-        <li>
-            **Advanced UX/UI:** Leveraged **Framer Motion** for polished, interactive components and smooth **Single-Page Application (SPA)** animations.
-        </li>
-        <li>
-            **Personalized Guidance:** Features a **Persona Engine** that tailors AI advice based on the user role (e.g., parent, student, teacher) for relevant safety guidance.
-        </li>
+      <li><strong>Secure AI Integration:</strong> Protected API access via proxy backend hosted on Render.</li>
+      <li><strong>Frontend:</strong> Built with React.js, styled using MUI, and animated with Framer Motion.</li>
+      <li><strong>Personalization:</strong> Role-based “Persona Engine” tailors AI safety advice for parents, students, and teachers.</li>
     </ul>
-    <a href="https://safepath-six.vercel.app/" target="_blank">
-        View Project
-    </a>
-</div>
+    <a href="https://safepath-six.vercel.app/" target="_blank">View Project</a>
+  </div>
 
-
-
-
-<div class="project">
-    <h3>SafeNet: AI Content Moderation & Real-Time Filtering Engine</h3>
-    <img
-        src="images/safe-net-preview.png"
-        alt="Live Demo of SafeNet: AI-Powered Content Moderation Dashboard"
-    />
+  <!-- SafeNet -->
+  <div class="project">
+    <h3>SafeNet – AI Content Moderation & Real-Time Filtering</h3>
+    <img src="images/safe-net-preview.png" alt="SafeNet AI Content Moderation Dashboard" />
     <p>
-        Developed **SafeNet**, an advanced **AI-powered** platform that enables real-time content filtering across URLs, text, and keywords. This project showcases deep **Full-Stack Frontend Development** expertise using **React.js** and **Material-UI (MUI)**, with a focus on integrating complex backend AI services for online safety.
+      <strong>SafeNet</strong> is an <strong>AI-powered moderation platform</strong> for filtering unsafe content in real-time. Built with <strong>Next.js, React.js,</strong> and <strong>Material-UI</strong>, featuring backend integration with <strong>OpenRouter (Llama 3)</strong>.
     </p>
-                  
     <ul>
-        <li>
-            **AI Integration:** Implemented the core filtering logic by integrating with external model providers like **OpenRouter**, specifically utilizing fine-tuned models (e.g., Llama 3) for rapid, accurate content classification.
-        </li>
-        <li>
-            **Advanced UX/UI:** Engineered a highly responsive interface with **MUI** and incorporated **Framer Motion** for smooth, scroll-triggered animations to demonstrate technical polish and a premium user experience.
-        </li>
-        <li>
-            **Client-Side Architecture:** Built using Next.js App Router for server-side optimization and utilized **client-side state** to simulate **seamless Single-Page Application (SPA)** routing.
-        </li>
-        <li>
-            **Custom Logic:** Designed the **Safety Decision Engine** to handle customized user sensitivity settings, resulting in three distinct actions: display, flag, or block.
-        </li>
+      <li><strong>AI Classification:</strong> Real-time filtering across text and URLs using fine-tuned LLMs.</li>
+      <li><strong>UX/UI:</strong> Framer Motion animations and responsive dashboard built with MUI.</li>
+      <li><strong>Safety Engine:</strong> Custom logic for user sensitivity controls (display, flag, or block).</li>
     </ul>
-    <a href="https://safe-net-frontend.vercel.app/" target="_blank">
-        View Project
-    </a>
-</div>
+    <a href="https://safe-net-frontend.vercel.app/" target="_blank">View Project</a>
+  </div>
 
-        <div class="project">
-  <h3 itemprop="name">MediGuid NYC: AI Symptom Checker & Health Resources</h3>
-  <img
-    src="images/mediguid-nyc-preview.png" alt="MediGuid NYC Live Demo: AI-Powered Symptom Checker, Chat Assistant, and Local Health Resources"
-    item itemprop="image"
-  />
-  <p itemprop="description">
-    <strong>MediGuid NYC</strong> is a full-stack web application providing **AI-powered symptom guidance** and **local health resources** for New Yorkers. Built with a <strong>React.js frontend (Material-UI)</strong> and a <strong>Node.js/Express.js backend</strong>, it acts as an intelligent assistant for non-emergency health inquiries and finding local medical support.
-  </p>
-  <p itemprop="description">
-    This project demonstrates strong **full-stack development** and **external AI API integration** (OpenRouter.ai). Key achievements include successful **environment variable management** and intricate **CORS policy configurations** across deployed services. I effectively resolved complex deployment challenges, including `ERR_CONNECTION_REFUSED` (from `localhost` issues), `Network Error` on the frontend, and "Out of Memory" errors on the backend.
-  </p>
-  <p itemprop="description">
-    Deployed on **Vercel** (frontend hosting) and **Render** (backend deployment), MediGuid NYC showcases robust **client-server architecture** and the ability to build and deploy scalable **AI-driven web applications**.
-  </p>
-  <a href="https://mediguid-nyc.vercel.app/" target="_blank" itemprop="url">View Project</a>
-</div>
-
-        <div class="project">
-  <h3 itemprop="name">CogniFlow: AI-Powered Data Transformation & Processing Platform</h3>
-  <img
-    src="images/cogniflow-preview.png"
-    alt="CogniFlow Live Demo: AI Data Processing, Transformation, and File Management Interface"
-    itemprop="image"
-  />
-  <p itemprop="description">
-    <strong>CogniFlow</strong>, a full-stack web application designed for **AI-powered data transformation**, **data processing**, and **file management**. This platform serves as a versatile **AI tool** for businesses and individuals needing efficient **data extraction**, **document parsing**, and **report generation**. The intuitive and responsive user interface, built with <strong>React.js</strong> for the frontend, leverages <strong>Material-UI (MUI)</strong> to ensure a modern and adaptable user experience across all devices, facilitating seamless text input, file uploads, and task configuration.
-  </p>
-  <p itemprop="description">
-    This project showcases strong expertise in **full-stack development**, integrating a robust **Node.js/Express.js backend** to handle API requests, perform complex data processing, and manage file operations securely. It demonstrates proficiency in **external API integration** for advanced AI capabilities, supporting a modular architecture for future growth. Key achievements include implementing secure **environment variable management** for API keys and backend URLs on both client and server sides, configuring **CORS policies** for seamless cross-origin communication between deployed frontend (<strong>Vercel hosting</strong>) and backend (<strong>Render cloud platform</strong>) services, and successfully resolving complex deployment and communication challenges (e.g., `404 Not Found` errors due to URL construction, `500 Internal Server Errors` during backend processing, and `localhost` download link issues).
-  </p>
-  <p itemprop="description">
-    The application highlights core skills in **component-driven design**, **state management**, handling secure file uploads and downloads, and building intuitive **multi-step task interfaces**. It reflects a comprehensive understanding of **client-server architecture** and the ability to deploy complex **web applications** to leading cloud platforms like **Vercel** (for **frontend hosting**) and **Render** (for **backend deployment**), ensuring high availability, scalability, and secure operation for **AI workflow automation**.
-  </p>
-  <a href="https://cogniflow-app.vercel.app/" target="_blank" itemprop="url">View Project</a>
-</div>
-
-        
-
-        <div class="project">
-  <h3>DataSanctuary: Zero-Knowledge Cloud Security & Data Management</h3>
-  <img
-    src="images/datasanctuary-preview.png"
-    alt="Live Demo of DataSanctuary: Zero-Knowledge Data Management Platform"
-  />
-  <p>
-    Developed **DataSanctuary**, a modern **Zero-Knowledge** and **data-privacy** focused
-    web application built with **React.js** and **Material-UI (MUI)**. This
-    project showcases **Full-Stack Frontend Development** and advanced UX/UI implementation.
-  </p>
-          
-  <ul>
-    <li>
-      **Dynamic UX:** Engineered a **responsive, sticky navbar** with a scroll-triggered
-      state change for modern navigation and a premium user experience.
-    </li>
-    <li>
-      **SPA Navigation:** Implemented **client-side routing** via React state
-      to simulate **seamless single-page application (SPA)** transitions.
-    </li>
-    <li>
-      **Security Transparency:** Created anchor-linked sections for **Encryption**,
-      **Audit Reports**, and **GDPR/CCPA Compliance** to detail the security architecture.
-    </li>
-    <li>
-      **Authentication UI:** Designed **polished Login and Sign-Up flows**, including
-      custom theme branding and third-party authentication integration.
-    </li>
-  </ul>
-  <a href="https://datasanctuary.vercel.app/" target="_blank">
-    View Project
-  </a>
-</div>
-
-         <div class="project">
-  <h3>Research Assistant AI: Intelligent Data & Research Management</h3>
-  <img
-    src="images/research-assistant-preview.png"
-    alt="Live Preview of Research Assistant AI Web Application"
-  />
-  <p>
-    Developed **Research Assistant AI**, a full-stack, AI-powered web platform
-    designed to streamline research workflows and enhance data management. The
-    application features a robust **React.js** frontend with **Material-UI**
-    for a modern and responsive user interface, paired with a **Node.js/Express.js**
-    backend. Key functionalities include:
+  <!-- MediGuid NYC -->
+  <div class="project">
+    <h3>MediGuid NYC – AI Symptom Checker & Health Resources</h3>
+    <img src="images/mediguid-nyc-preview.png" alt="MediGuid NYC AI Health Assistant" />
+    <p>
+      <strong>MediGuid NYC</strong> is a <strong>Full-Stack AI health assistant</strong> providing symptom guidance and local health resources. Built with <strong>React.js (MUI)</strong> and a <strong>Node.js/Express</strong> backend integrated with <strong>OpenRouter.ai</strong>.
+    </p>
     <ul>
-      <li>AI-powered search for generating concise research summaries.</li>
-      <li>Intelligent outline generation from raw text.</li>
-      <li>Automated form population by extracting answers from source material.</li>
-      <li>An interactive AI chat assistant for quick queries and support.</li>
+      <li>Deployed on <strong>Vercel (frontend)</strong> and <strong>Render (backend)</strong>.</li>
+      <li>Implemented secure environment variables and CORS configurations.</li>
+      <li>Resolved deployment issues such as network errors and memory limits.</li>
     </ul>
-  </p>
-  <p>
-    This project demonstrates strong proficiency in integrating advanced AI models
-    (via **OpenRouter.ai** with OpenAI's GPT models) into a practical application.
-    It showcases mastery in building scalable single-page applications, managing
-    client-server communication, and implementing complex state logic with
-    **React Router Dom** for seamless navigation. The focus was on creating
-    an intuitive and efficient tool that leverages AI to transform raw information
-    into structured, actionable insights, highlighting skills in full-stack
-    development, API integration, and user-centric design.
-  </p>
-  <a href="https://research-assistant-tims-projects-d59677e7.vercel.app/" target="_blank"
-    >View Project</a
-  >
-</div>
+    <a href="https://mediguid-nyc.vercel.app/" target="_blank">View Project</a>
+  </div>
 
-        
+  <!-- CogniFlow -->
+  <div class="project">
+    <h3>CogniFlow – AI Data Transformation & File Management</h3>
+    <img src="images/cogniflow-preview.png" alt="CogniFlow AI Data Processing Platform" />
+    <p>
+      <strong>CogniFlow</strong> is an <strong>AI-driven data transformation platform</strong> for processing, parsing, and managing structured files. Built with <strong>React.js (MUI)</strong> and a <strong>Node.js/Express</strong> backend.
+    </p>
+    <ul>
+      <li>Supports text input, file upload, and automated document parsing.</li>
+      <li>Integrated external APIs for advanced AI data processing.</li>
+      <li>Deployed via <strong>Vercel</strong> (frontend) and <strong>Render</strong> (backend) with secure API management.</li>
+    </ul>
+    <a href="https://cogniflow-app.vercel.app/" target="_blank">View Project</a>
+  </div>
 
-        
-<div class="project">
-  <h3>Odysseus AI Mentor: Personalized Growth & Development Platform</h3>
-  <img
-    src="images/odysseus-ai-preview.png"
-    alt="Live Preview of Odysseus AI Mentor Chat Interface"
-  />
-  <p>
-  <strong>Odysseus AI Mentor</strong>, a full-stack web application that serves as a personalized AI mentor for users seeking guidance in self-improvement and career development. The application features a dynamic and responsive chat interface built with **React.js** for the frontend, leveraging **Material-UI (MUI)** to ensure a modern and adaptable user experience across all devices.
-  </p>
-  <p>
-    This project showcases strong expertise in **full-stack development**, integrating a robust **Node.js/Express.js backend** to handle API requests and securely manage sensitive information. It demonstrates proficiency in **external API integration** with the **OpenRouter API** for advanced AI capabilities (using models like Mistral-7B-Instruct). Key achievements include implementing secure **environment variable management** for API keys on the server-side, configuring **CORS policies** for seamless cross-origin communication between deployed frontend (Vercel) and backend (Render) services, and resolving complex deployment challenges (e.g., `EADDRINUSE` errors, `401 Unauthorized` API key issues).
-  </p>
-  <p>
-    The application highlights skills in **component-driven design**, **state management**, and building intuitive conversational interfaces. It reflects a comprehensive understanding of client-server architecture and the ability to deploy complex applications to cloud platforms like **Vercel (for frontend)** and **Render (for backend)**, ensuring high availability and secure operation.
-  </p>
-  <a href="https://odysseus-ai-v2.vercel.app/" target="_blank">View Project</a>
-</div>
+  <!-- DataSanctuary -->
+  <div class="project">
+    <h3>DataSanctuary – Zero-Knowledge Cloud Security</h3>
+    <img src="images/datasanctuary-preview.png" alt="DataSanctuary Zero-Knowledge Data Management" />
+    <p>
+      <strong>DataSanctuary</strong> is a <strong>privacy-first web app</strong> showcasing zero-knowledge data management and compliance transparency. Built with <strong>React.js</strong> and <strong>Material-UI</strong>.
+    </p>
+    <ul>
+      <li>Implemented SPA navigation and animated UI with Framer Motion.</li>
+      <li>Developed sections for Encryption, Audit Reports, and GDPR/CCPA.</li>
+      <li>Custom Login/Signup flow with third-party auth integration.</li>
+    </ul>
+    <a href="https://datasanctuary.vercel.app/" target="_blank">View Project</a>
+  </div>
 
-        
-<div class="project">
-  <h3>CareerQuest: Personalized Career Discovery</h3>
-  <img
-    src="images/careerquest-preview.png"
-    alt="Live Preview of CareerQuest Web Application"
-  />
-  <p>
-    Developed **CareerQuest**, a dynamic and intuitive web platform designed
-    to guide users in discovering their ideal career path. The application is
-    built with **React.js** for a robust and efficient front-end, utilizing
-    **Material-UI** for a modern, responsive, and visually appealing user
-    interface. Key features include a comprehensive questionnaire to assess
-    interests and skills, personalized career recommendations, an interactive
-    chat widget for support, user authentication (Google and email/password),
-    and a clear "About Us" section.
-  </p>
-  <p>
-    This project demonstrates strong proficiency in building scalable
-    single-page applications, implementing smooth and engaging animations
-    with **Framer Motion** for enhanced user experience (e.g., skill selection),
-    and mastering **Material-UI** for complex and adaptive layouts across
-    different devices. It showcases a deep understanding of component-driven
-    design, state management, client-side routing with **React Router Dom**,
-    and attention to detail in creating intuitive user interfaces for
-    personal and career decision-making.
-  </p>
-  <a href="https://career-quest-virid.vercel.app/" target="_blank"
-    >View Project</a
-  >
-</div>
+  <!-- Research Assistant AI -->
+  <div class="project">
+    <h3>Research Assistant AI – Data & Research Automation</h3>
+    <img src="images/research-assistant-preview.png" alt="Research Assistant AI Platform" />
+    <p>
+      <strong>Research Assistant AI</strong> is a <strong>Full-Stack application</strong> for streamlining research workflows via AI-powered summarization, outline generation, and form automation.
+    </p>
+    <ul>
+      <li>Integrated GPT models via <strong>OpenRouter.ai</strong>.</li>
+      <li>Built with <strong>React.js (MUI)</strong> and <strong>Node.js/Express.js</strong>.</li>
+      <li>SPA navigation using React Router and modular component architecture.</li>
+    </ul>
+    <a href="https://research-assistant-tims-projects-d59677e7.vercel.app/" target="_blank">View Project</a>
+  </div>
 
-    
-<div class="project">
-  <h3>BankInsight: Financial Comparison Platform</h3>
-  <img
-    src="images/bankinsight-preview.png"
-    alt="Live Preview of BankInsight Web Application"
-  />
-  <p>
-    Developed **BankInsight**, a dynamic and intuitive web platform designed
-    to help users compare and explore various banking products and services.
-    The application is built with **React.js** for a robust and efficient
-    front-end, utilizing **Material-UI** for a modern, responsive, and
-    visually appealing user interface. Key features include comprehensive
-    bank listings with powerful search and filtering capabilities, detailed
-    comparison cards for various financial products, a responsive navigation
-    system, an interactive "How It Works" guide, and a dynamic FAQ section.
-  </p>
-  <p>
-    This project demonstrates strong proficiency in building scalable
-    single-page applications, implementing smooth and engaging animations
-    with **Framer Motion** for enhanced user experience across key sections
-    like the hero, "how it works," and FAQ, and mastering **Material-UI** for
-    complex and adaptive layouts across different devices. It showcases a
-    deep understanding of component-driven design, state management,
-    client-side routing with **React Router Dom**, and attention to detail
-    in creating intuitive user interfaces for financial decision-making.
-  </p>
-  <a href="https://banking-summarizer.vercel.app/" target="_blank"
-    >View Project</a
-  >
-</div>
-     
-        <div class="project">
-          <h3>MetroExams: NYC Exam Finder</h3>
-          <img
-            src="images/metro-exams-preview.png"
-            alt="Live Preview of MetroExams Web Application"
-          />
-          <p>
-            Developed **MetroExams**, a dynamic and interactive web platform
-            designed to help users find and explore various exams across New
-            York City. The application is built with **React.js** for a robust
-            and efficient front-end, utilizing **Material-UI** for a modern,
-            responsive, and visually appealing user interface. Key features
-            include a comprehensive exam listing page with search and filtering
-            capabilities, detailed exam information cards, a responsive
-            navigation system, and an interactive FAQ section.
-          </p>
-          <p>
-            This project demonstrates strong proficiency in building scalable
-            single-page applications, implementing smooth and engaging
-            animations with **Framer Motion** for enhanced user experience, and
-            mastering **Material-UI** for complex and adaptive layouts across
-            different devices. It showcases a deep understanding of
-            component-driven design, state management, client-side routing with
-            **React Router Dom**, and attention to detail in creating intuitive
-            user interfaces.
-          </p>
-          <a href="https://metro-exams.vercel.app/" target="_blank"
-            >View Project</a
-          >
-        </div>
+  <!-- Odysseus AI Mentor -->
+  <div class="project">
+    <h3>Odysseus AI Mentor – Personalized Growth & Career Guidance</h3>
+    <img src="images/odysseus-ai-preview.png" alt="Odysseus AI Mentor Chat Application" />
+    <p>
+      <strong>Odysseus AI Mentor</strong> is a <strong>Full-Stack AI chat platform</strong> offering personalized mentorship and professional development insights.
+    </p>
+    <ul>
+      <li>Built with React.js (MUI) and Node.js/Express backend.</li>
+      <li>Integrated <strong>Mistral-7B-Instruct</strong> via OpenRouter API.</li>
+      <li>Deployed on <strong>Vercel</strong> (frontend) and <strong>Render</strong> (backend) with secure API key handling.</li>
+    </ul>
+    <a href="https://odysseus-ai-v2.vercel.app/" target="_blank">View Project</a>
+  </div>
 
-        <div class="project">
-          <h3>Dynamic Medical Practice Web Platform</h3>
-          <img
-            src="images/my-medical-app-preview.png"
-            alt="Live Preview of the Medical Clinic Landing Page"
-          />
-          <p>
-            Developed a modern and highly interactive web platform for a medical
-            clinic, leveraging **React.js** for a robust front-end and
-            **Material-UI** for a polished, responsive user interface. Key
-            sections include an inviting hero banner, a detailed breakdown of
-            services, a 'Meet the Doctors' gallery, a curated feed for medical
-            news, and an integrated newsletter subscription.
-          </p>
-          <p>
-            This project underscores strong proficiency in building scalable
-            single-page applications, implementing sophisticated **Framer
-            Motion** animations for enhanced user engagement on scroll, and
-            mastering Material-UI for complex and adaptive layouts. It showcases
-            a commitment to component-driven design and intuitive user
-            experiences.
-          </p>
-          <a href="https://my-medical-app-pied.vercel.app/" target="_blank"
-            >View Project</a
-          >
-        </div>
+  <!-- CareerQuest -->
+  <div class="project">
+    <h3>CareerQuest – Personalized Career Discovery</h3>
+    <img src="images/careerquest-preview.png" alt="CareerQuest Career Discovery Platform" />
+    <p>
+      <strong>CareerQuest</strong> helps users discover ideal career paths through personalized recommendations and interactive assessments.
+    </p>
+    <ul>
+      <li>Built with React.js, Material-UI, and Framer Motion.</li>
+      <li>Includes user authentication (Google & Email), chat widget, and questionnaire flow.</li>
+      <li>SPA routing and component-driven UI for smooth navigation.</li>
+    </ul>
+    <a href="https://career-quest-virid.vercel.app/" target="_blank">View Project</a>
+  </div>
+
+  <!-- BankInsight -->
+  <div class="project">
+    <h3>BankInsight – Financial Comparison Platform</h3>
+    <img src="images/bankinsight-preview.png" alt="BankInsight Banking Comparison Web App" />
+    <p>
+      <strong>BankInsight</strong> allows users to compare banking products with a modern, animated, and responsive interface.
+    </p>
+    <ul>
+      <li>Built with React.js, MUI, and Framer Motion.</li>
+      <li>Includes search, filtering, and dynamic comparison cards.</li>
+      <li>Optimized SPA layout for accessibility and mobile responsiveness.</li>
+    </ul>
+    <a href="https://banking-summarizer.vercel.app/" target="_blank">View Project</a>
+  </div>
+
+  <!-- MetroExams -->
+  <div class="project">
+    <h3>MetroExams – NYC Exam Finder</h3>
+    <img src="images/metro-exams-preview.png" alt="MetroExams NYC Exam Finder" />
+    <p>
+      <strong>MetroExams</strong> helps New Yorkers find and explore available city exams with search and filtering tools.
+    </p>
+    <ul>
+      <li>Developed with React.js, MUI, and Framer Motion.</li>
+      <li>SPA design with searchable exam listings and FAQ section.</li>
+      <li>Responsive, mobile-friendly layout with clean UI transitions.</li>
+    </ul>
+    <a href="https://metro-exams.vercel.app/" target="_blank">View Project</a>
+  </div>
+
+  <!-- Medical Platform -->
+  <div class="project">
+    <h3>Dynamic Medical Practice Platform</h3>
+    <img src="images/my-medical-app-preview.png" alt="Medical Clinic Web Platform" />
+    <p>
+      A modern landing platform for a medical clinic featuring service listings, doctor profiles, and health news feed.
+    </p>
+    <ul>
+      <li>Built with React.js and Material-UI for a polished, responsive UI.</li>
+      <li>Implemented scroll-based animations via Framer Motion.</li>
+      <li>Optimized SPA design for engagement and accessibility.</li>
+    </ul>
+    <a href="https://my-medical-app-pied.vercel.app/" target="_blank">View Project</a>
+  </div>
+</section>
+
 
          <div class="project">
           <h3>ZeroCrate: Fresh Grocery Retail Solutions</h3>
@@ -562,8 +418,6 @@
             >View Project</a
           >
         </div>
-
-       
 
         <div class="project">
           <h3>Aurora: Your Personalized Productivity Dashboard</h3>
