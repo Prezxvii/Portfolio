@@ -58,7 +58,7 @@ p {
   margin: 0 auto;
 }
 
-/* Navigation Bar */
+/* --- Navigation Bar --- */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -100,7 +100,7 @@ p {
 
 .contact-button {
   background-color: var(--button-bg-color);
-  color: var(--button-text-color) !important; /* !important to override nav-links a */
+  color: var(--button-text-color); 
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: bold;
@@ -109,21 +109,21 @@ p {
 
 .contact-button:hover {
   background-color: var(--accent-color);
-  color: var(--button-bg-color) !important;
+  color: var(--button-bg-color);
 }
 
-/* Hero Section */
+/* --- Hero Section --- */
 .hero-section {
-  position: relative; /* Added for video positioning */
+  position: relative; 
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 80px); /* Full viewport height minus nav height */
   text-align: center;
   padding: 0 20px;
-  background-color: var(--primary-bg-color); /* Fallback background color */
-  overflow: hidden; /* Added to hide any video overflow */
-  color: var(--text-color); /* Ensure text is readable */
+  background-color: var(--primary-bg-color); 
+  overflow: hidden; 
+  color: var(--text-color); 
 }
 
 /* Video Background Specific Styles */
@@ -134,7 +134,7 @@ p {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: 1; /* Place video behind content */
+  z-index: 1; 
 }
 
 .video-background video {
@@ -146,22 +146,22 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  object-fit: cover; /* Ensures the video covers the entire container */
-  filter: brightness(0.5); /* Darken the video to make text more readable */
+  object-fit: cover; 
+  filter: brightness(0.5); 
 }
 
 .hero-content {
-  position: relative; /* Bring content above the video */
-  z-index: 2; /* Place content above video */
+  position: relative; 
+  z-index: 2; 
   max-width: 800px;
 }
 
 .hero-content h1 {
-  font-size: 5em; /* Large, impactful text */
-  font-weight: 900; /* Extra bold */
+  font-size: 5em; 
+  font-weight: 900; 
   margin-bottom: 20px;
   letter-spacing: -0.03em;
-  color: var(--text-color); /* Ensure readability over dark video */
+  color: var(--text-color); 
 }
 
 .hero-content p {
@@ -189,7 +189,7 @@ p {
   color: var(--button-bg-color) !important;
 }
 
-/* About Section */
+/* --- About Section --- */
 #about h2 {
   font-size: 3em;
   text-align: center;
@@ -211,7 +211,7 @@ p {
   color: var(--accent-color);
 }
 
-/* Tools Section */
+/* --- Tools Section --- */
 #tools h2 {
   font-size: 3em;
   text-align: center;
@@ -260,7 +260,7 @@ p {
   font-size: 1.2em;
 }
 
-/* Projects Section */
+/* --- Projects Section --- */
 #projects h2 {
   font-size: 3em;
   text-align: center;
@@ -269,7 +269,8 @@ p {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Adjust minmax(300px, 1fr) for better grid flow */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 40px;
 }
 
@@ -280,6 +281,8 @@ p {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid var(--border-color);
+  
+  /* FIX: Ensure all cards in a row are the same height */
   display: flex;
   flex-direction: column;
 }
@@ -292,7 +295,7 @@ p {
 .project img {
   width: 100%;
   height: 220px; /* Fixed height for consistency */
-  object-fit: cover; /* Ensures images cover the area without distortion */
+  object-fit: cover; 
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -307,7 +310,22 @@ p {
   color: var(--accent-color);
   padding: 0 20px;
   margin-bottom: 15px;
-  flex-grow: 1; /* Makes paragraphs take available space */
+  /* FIX: Paragraphs grow to fill space, pushing the button down */
+  flex-grow: 1; 
+}
+
+/* NEW: Styles for lists inside project cards (used in your newer projects) */
+.project ul {
+  list-style: disc;
+  list-style-position: inside;
+  padding: 0 20px;
+  margin: 0 20px 15px 20px;
+}
+
+.project ul li {
+  font-size: 0.9em;
+  color: var(--accent-color);
+  margin-bottom: 5px;
 }
 
 .project a {
@@ -317,9 +335,12 @@ p {
   padding: 10px 15px;
   border-radius: 5px;
   font-weight: bold;
-  margin: 0 20px 20px 20px; /* Aligns with padding of text */
+  margin: 0 20px 20px 20px; 
   align-self: flex-start; /* Aligns button to the start of its flex container */
   transition: background-color 0.3s ease, color 0.3s ease;
+  
+  /* IMPORTANT: Ensures the button stays fixed to the bottom of the card */
+  margin-top: auto; 
 }
 
 .project a:hover {
@@ -327,11 +348,11 @@ p {
   color: var(--button-bg-color) !important;
 }
 
-/* Contact Section */
+/* --- Contact Section --- */
 #contact {
   text-align: center;
   padding: var(--section-spacing) 20px;
-  background-color: var(--secondary-bg-color); /* Lighter dark background */
+  background-color: var(--secondary-bg-color); 
   border-top: 1px solid var(--border-color);
 }
 
@@ -380,7 +401,7 @@ p {
   color: var(--accent-color);
 }
 
-/* Footer */
+/* --- Footer --- */
 footer {
   text-align: center;
   padding: 30px 20px;
@@ -390,7 +411,7 @@ footer {
   border-top: 1px solid var(--border-color);
 }
 
-/* Responsive Design */
+/* --- Responsive Design --- */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -454,6 +475,10 @@ footer {
   .project p {
     font-size: 0.9em;
   }
+  
+  .project ul {
+    font-size: 0.8em;
+  }
 
   /* Responsive adjustments for video background on smaller screens */
   .hero-section {
@@ -484,6 +509,3 @@ footer {
     min-height: 60vh;
   }
 }
-
-
-
