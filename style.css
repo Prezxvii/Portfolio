@@ -232,8 +232,10 @@ a:hover {
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-auto-rows: 1fr;
   gap: 30px;
   margin-top: 40px;
+  align-items: stretch;
 }
 
 /* --- Project Card --- */
@@ -243,7 +245,8 @@ a:hover {
   overflow: hidden;
   background-color: var(--secondary-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: block;
+  display: flex;
+  flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -259,37 +262,41 @@ a:hover {
   object-fit: cover;
   border-bottom: 1px solid var(--accent-color);
   display: block;
+  flex-shrink: 0;
 }
 
 /* --- Project Title --- */
 .project h3 {
-  padding: 20px 20px 8px 20px;
+  padding: 18px 20px 6px 20px;
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1.05em;
   line-height: 1.4;
   color: var(--primary-color);
+  flex-shrink: 0;
 }
 
 /* --- Project Description --- */
 .project p {
   padding: 0 20px;
   margin: 8px 0 0 0;
-  font-size: 0.93em;
-  line-height: 1.65;
+  font-size: 0.88em;
+  line-height: 1.6;
   color: var(--text-color);
+  flex-shrink: 0;
 }
 
 /* --- Project Bullet List --- */
 .project ul {
   list-style: none;
   padding: 0 20px;
-  margin: 10px 0 0 0;
+  margin: 8px 0 0 0;
+  flex-shrink: 0;
 }
 
 .project ul li {
-  font-size: 0.88em;
-  line-height: 1.6;
-  margin-bottom: 7px;
+  font-size: 0.85em;
+  line-height: 1.55;
+  margin-bottom: 6px;
   padding-left: 1.4em;
   position: relative;
   color: var(--text-color);
@@ -305,8 +312,10 @@ a:hover {
 }
 
 /* --- Project Links Wrapper --- */
+/* margin-top: auto pushes the button to the bottom of every card */
 .project-links {
-  padding: 14px 20px 20px 20px;
+  padding: 16px 20px 20px 20px;
+  margin-top: auto;
 }
 
 /* --- Primary Button (inside .project-links) --- */
