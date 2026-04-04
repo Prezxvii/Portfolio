@@ -1,18 +1,19 @@
-
- :root {
+:root {
   --primary-color: #001f4c;
-  --secondary-color: #f8f8ff; /* Glossy White */
-  --accent-color: #c0c0c0; /* Silver */
-  --text-color: #333333; /* Dark Gray for main text */
+  --secondary-color: #f8f8ff;
+  --accent-color: #c0c0c0;
+  --text-color: #333333;
   --button-hover: #003366;
 }
 
-/* Base Styles */
+/* ===========================
+   Base Styles
+=========================== */
 body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--secondary-color); /* Glossy White background */
+  background-color: var(--secondary-color);
   color: var(--text-color);
   line-height: 1.6;
 }
@@ -20,7 +21,7 @@ body {
 h1,
 h2,
 h3 {
-  color: var(--primary-color); /* Navy Blue headings */
+  color: var(--primary-color);
 }
 
 a {
@@ -39,15 +40,17 @@ a:hover {
   margin: 0 auto;
 }
 
-/* --- Navigation Bar --- */
+/* ===========================
+   Navigation Bar
+=========================== */
 .navbar {
-  background-color: var(--secondary-color); /* White background */
+  background-color: var(--secondary-color);
   color: var(--primary-color);
   padding: 15px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for lift */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -71,30 +74,32 @@ a:hover {
 }
 
 .nav-links a {
-  color: var(--primary-color); /* Navy blue link text */
+  color: var(--primary-color);
   font-weight: 500;
   padding: 5px 10px;
   border-radius: 5px;
 }
 
 .nav-links a:hover {
-  background-color: var(--accent-color); /* Silver background on hover */
-  color: var(--secondary-color); /* White text on hover */
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
 }
 
 .contact-button {
-  background-color: var(--primary-color); /* Navy Blue background */
-  color: var(--secondary-color) !important; /* White text */
+  background-color: var(--primary-color);
+  color: var(--secondary-color) !important;
   padding: 8px 15px;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 .contact-button:hover {
-  background-color: var(--button-hover); /* Lighter Navy on hover */
+  background-color: var(--button-hover);
 }
 
-/* --- Hero Section --- */
+/* ===========================
+   Hero Section
+=========================== */
 .hero-section {
   position: relative;
   height: 100vh;
@@ -119,15 +124,13 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(
-    0.3
-  ); /* Darken the video so white text is readable against it */
+  filter: brightness(0.3);
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  color: var(--secondary-color); /* White text over the dark video */
+  color: var(--secondary-color);
   padding: 20px;
   max-width: 800px;
 }
@@ -135,7 +138,7 @@ a:hover {
 .hero-content h1 {
   font-size: 3.5em;
   margin-bottom: 0.5em;
-  color: var(--secondary-color); /* White heading text */
+  color: var(--secondary-color);
 }
 
 .hero-content p {
@@ -145,8 +148,8 @@ a:hover {
 
 .hero-button {
   display: inline-block;
-  background-color: var(--primary-color); /* Navy Blue button */
-  color: var(--secondary-color); /* White text */
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   padding: 12px 25px;
   border-radius: 5px;
   font-weight: bold;
@@ -155,20 +158,21 @@ a:hover {
 
 .hero-button:hover {
   background-color: var(--button-hover);
+  color: var(--secondary-color);
 }
 
-/* --- About Section --- */
+/* ===========================
+   About Section
+=========================== */
 #about {
   background-color: var(--secondary-color);
 }
 
-.about-content {
-  /* No specific styling needed, uses default section padding */
-}
-
-/* --- Tools/Skills Section --- */
+/* ===========================
+   Tools / Skills Section
+=========================== */
 #tools {
-  background-color: #eeeeee; /* A slightly darker white/light gray background for contrast */
+  background-color: #eeeeee;
 }
 
 .tools-container {
@@ -183,10 +187,10 @@ a:hover {
   flex: 1;
   min-width: 250px;
   padding: 20px;
-  border: 1px solid var(--accent-color); /* Silver border */
+  border: 1px solid var(--accent-color);
   border-radius: 8px;
-  background-color: var(--secondary-color); /* White card background */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle lift */
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -196,7 +200,7 @@ a:hover {
 }
 
 .tool-category h3 {
-  border-bottom: 2px solid var(--primary-color); /* Navy Blue underline */
+  border-bottom: 2px solid var(--primary-color);
   padding-bottom: 10px;
   margin-top: 0;
   font-size: 1.3em;
@@ -215,26 +219,29 @@ a:hover {
 
 .tool-category li i {
   margin-right: 10px;
-  color: var(--primary-color); /* Navy Blue icon color */
+  color: var(--primary-color);
 }
 
-/* --- Projects Section (The Grid) --- */
+/* ===========================
+   Projects Section
+=========================== */
 #projects {
   background-color: var(--secondary-color);
 }
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive Grid */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
   margin-top: 40px;
 }
 
+/* --- Project Card --- */
 .project {
-  border: 1px solid var(--accent-color); /* Silver border */
+  border: 1px solid var(--accent-color);
   border-radius: 10px;
   overflow: hidden;
-  background-color: var(--secondary-color); /* White background for projects */
+  background-color: var(--secondary-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -246,68 +253,111 @@ a:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
+/* --- Project Image --- */
 .project img {
   width: 100%;
-  height: auto;
-  min-height: 200px;
+  height: 200px;
   object-fit: cover;
-  border-bottom: 1px solid var(--accent-color); /* Silver separator */
+  border-bottom: 1px solid var(--accent-color);
+  display: block;
 }
 
+/* --- Project Title --- */
 .project h3 {
-  padding: 20px 20px 5px 20px;
+  padding: 20px 20px 8px 20px;
   margin: 0;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  line-height: 1.4;
   color: var(--primary-color);
 }
 
+/* --- Project Description --- */
 .project p {
   padding: 0 20px;
-  flex-grow: 1; /* Allows text to fill space */
-  font-size: 0.95em;
+  margin: 8px 0 0 0;
+  font-size: 0.93em;
+  line-height: 1.65;
+  color: var(--text-color);
+  flex-grow: 1;
 }
 
+/* --- Project Bullet List --- */
 .project ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0 20px;
-  margin-top: 10px;
+  margin: 12px 0 4px 0;
 }
 
 .project ul li {
-  font-size: 0.9em;
-  margin-bottom: 5px;
-  padding-left: 1.5em;
-  text-indent: -1.5em;
+  font-size: 0.88em;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  padding-left: 1.4em;
+  position: relative;
+  color: var(--text-color);
 }
 
 .project ul li::before {
   content: "•";
-  color: var(--primary-color); /* Navy blue bullet point */
+  color: var(--primary-color);
   font-weight: bold;
-  display: inline-block;
-  width: 1.5em;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
-.project a {
+/* --- Project Links Wrapper --- */
+.project-links {
+  padding: 16px 20px 20px 20px;
+  margin-top: auto;
+}
+
+/* --- Primary Button (inside .project-links) --- */
+.btn-primary {
   display: block;
   text-align: center;
-  background-color: var(--primary-color); /* Navy Blue button */
-  color: var(--secondary-color); /* White text */
-  padding: 10px;
-  margin: 20px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color) !important;
+  padding: 10px 16px;
   border-radius: 5px;
   font-weight: bold;
+  font-size: 0.95em;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--button-hover);
+  color: var(--secondary-color) !important;
+}
+
+/*
+  Fallback: bare <a> tags directly inside .project
+  (catches any remaining unwrapped links)
+*/
+.project > a {
+  display: block;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color) !important;
+  padding: 10px 16px;
+  margin: 16px 20px 20px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.95em;
   transition: background-color 0.3s ease;
 }
 
-.project a:hover {
+.project > a:hover {
   background-color: var(--button-hover);
-  color: var(--secondary-color);
+  color: var(--secondary-color) !important;
 }
 
-/* --- Contact Section --- */
+/* ===========================
+   Contact Section
+=========================== */
 #contact {
-  background-color: #eeeeee; /* Light gray background for contrast */
+  background-color: #eeeeee;
   text-align: center;
 }
 
@@ -322,8 +372,8 @@ a:hover {
 
 .main-button {
   display: inline-block;
-  background-color: var(--primary-color); /* Navy Blue button */
-  color: var(--secondary-color); /* White text */
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   padding: 12px 30px;
   border-radius: 5px;
   font-weight: bold;
@@ -333,6 +383,7 @@ a:hover {
 
 .main-button:hover {
   background-color: var(--button-hover);
+  color: var(--secondary-color);
 }
 
 .social-links {
@@ -340,34 +391,40 @@ a:hover {
 }
 
 .social-links a {
-  color: var(--primary-color); /* Navy Blue icons */
+  color: var(--primary-color);
   font-size: 2em;
   margin: 0 15px;
   transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-  color: var(--accent-color); /* Silver on hover */
+  color: var(--accent-color);
 }
 
-/* --- Footer --- */
+/* ===========================
+   Footer
+=========================== */
 footer {
   text-align: center;
   padding: 20px 5%;
-  background-color: var(--primary-color); /* Navy Blue background */
-  color: var(--accent-color); /* Silver text */
+  background-color: var(--primary-color);
+  color: var(--accent-color);
   font-size: 0.9em;
 }
 
-/* --- Media Queries for Responsiveness --- */
+/* ===========================
+   Media Queries
+=========================== */
 @media (max-width: 900px) {
   .tools-container {
     justify-content: center;
   }
+
   .tool-category {
     flex: none;
-    width: 45%; /* Two columns on larger tablets */
+    width: 45%;
   }
+
   .projects-container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
@@ -378,20 +435,29 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+
   .nav-links {
     margin-top: 10px;
     flex-direction: column;
   }
+
   .nav-links li {
     margin: 5px 0;
   }
+
   .tool-category {
-    width: 100%; /* Single column on phones */
+    width: 100%;
   }
+
   .projects-container {
     grid-template-columns: 1fr;
   }
+
   .hero-content h1 {
     font-size: 2.5em;
+  }
+
+  .project h3 {
+    font-size: 1.1em;
   }
 }
