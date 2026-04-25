@@ -238,7 +238,6 @@ a:hover {
   align-items: stretch;
 }
 
-/* --- Project Card --- */
 .project {
   border: 1px solid var(--accent-color);
   border-radius: 10px;
@@ -255,7 +254,6 @@ a:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* --- Project Image --- */
 .project img {
   width: 100%;
   height: 200px;
@@ -265,7 +263,6 @@ a:hover {
   flex-shrink: 0;
 }
 
-/* --- Project Title --- */
 .project h3 {
   padding: 18px 20px 6px 20px;
   margin: 0;
@@ -275,7 +272,6 @@ a:hover {
   flex-shrink: 0;
 }
 
-/* --- Project Description --- */
 .project p {
   padding: 0 20px;
   margin: 8px 0 0 0;
@@ -285,7 +281,6 @@ a:hover {
   flex-shrink: 0;
 }
 
-/* --- Project Bullet List --- */
 .project ul {
   list-style: none;
   padding: 0 20px;
@@ -311,14 +306,11 @@ a:hover {
   top: 0;
 }
 
-/* --- Project Links Wrapper --- */
-/* margin-top: auto pushes the button to the bottom of every card */
 .project-links {
   padding: 16px 20px 20px 20px;
   margin-top: auto;
 }
 
-/* --- Primary Button (inside .project-links) --- */
 .btn-primary {
   display: block;
   text-align: center;
@@ -337,10 +329,6 @@ a:hover {
   color: var(--secondary-color) !important;
 }
 
-/*
-  Fallback: bare <a> tags directly inside .project
-  (catches any remaining unwrapped links)
-*/
 .project > a {
   display: block;
   text-align: center;
@@ -357,6 +345,39 @@ a:hover {
 .project > a:hover {
   background-color: var(--button-hover);
   color: var(--secondary-color) !important;
+}
+
+/* ===========================
+   Archangels Image Strip (after footer)
+=========================== */
+.archangels-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #000;
+}
+
+.archangels-grid .archangel-img-wrap {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.archangels-grid .archangel-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  opacity: 0.7;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .archangels-grid {
+    grid-template-columns: 1fr;
+  }
+  .archangels-grid .archangel-img-wrap {
+    height: 180px;
+  }
 }
 
 /* ===========================
@@ -434,6 +455,11 @@ footer {
   .projects-container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+
+  .archangels-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -465,5 +491,13 @@ footer {
 
   .project h3 {
     font-size: 1.1em;
+  }
+
+  .archangels-section h2 {
+    font-size: 1.8em;
+  }
+
+  .archangel-img-wrap {
+    height: 260px;
   }
 }
