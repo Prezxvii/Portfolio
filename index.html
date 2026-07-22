@@ -93,6 +93,37 @@
       <h2>Projects</h2>
       <div class="projects-container">
 
+
+        <!-- ===================== NOUS CONNECT ===================== -->
+<div class="project">
+  <h3>Nous Connect – Full-Stack Resource Discovery Platform</h3>
+
+  <img src="images/nousconnect-preview.png" alt="Nous Connect resource search interface showing nearby food, housing, healthcare, and employment resources" />
+
+  <p>
+    <strong>Nous Connect</strong> is a production-ready <strong>full-stack MERN application</strong> that helps users discover nearby food, housing, healthcare, employment, and community resources through intelligent proximity search. Built independently from the ground up, the platform combines <strong>NYC Open Data</strong>, Google Maps services, and geospatial querying to deliver personalized recommendations, plain-language resource explanations, and real-time transit directions.
+  </p>
+
+  <ul>
+    <li><strong>Geospatial Search:</strong> Designed a MongoDB Atlas database using <strong>GeoJSON</strong> and <code>2dsphere</code> indexes with Mongoose, enabling efficient server-side proximity searches through MongoDB's <code>$near</code> geospatial queries.</li>
+
+    <li><strong>Backend Development:</strong> Built a scalable <strong>Node.js/Express REST API</strong> powering authentication, questionnaire-based resource matching, saved resources, notifications, and secure API integrations.</li>
+
+    <li><strong>API Integrations:</strong> Integrated the <strong>Google Maps Geocoding API</strong> for address-to-coordinate conversion, the <strong>Google Directions API</strong> for walking and public transit routes, and the <strong>NYC Open Data (SODA) API</strong> to populate and maintain verified community resource datasets.</li>
+
+    <li><strong>Authentication & Security:</strong> Implemented secure authentication using <strong>JWT</strong>, <strong>bcrypt</strong>, and Google OAuth, with centralized validation, protected API routes, rate limiting, and environment-based credential management.</li>
+
+    <li><strong>Frontend Engineering:</strong> Developed a responsive React interface featuring a guided multi-step intake questionnaire, interactive transit directions, personalized resource recommendations, account management, and accessible plain-language explanations for each program.</li>
+
+    <li><strong>Deployment:</strong> Deployed the frontend on <strong>Vercel</strong> and the Express backend on <strong>Render</strong>, configuring production environment variables, CORS, MongoDB Atlas connectivity, and cloud-based deployment pipelines.</li>
+  </ul>
+
+  <div class="project-links">
+    <a href="https://nous-connect.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-primary">View Project</a>
+  </div>
+</div>
+        
+
         <!-- ===================== CARELINK ===================== -->
         <div class="project">
           <h3>CareLink – Full-Stack NYC Resource &amp; Community Hub</h3>
